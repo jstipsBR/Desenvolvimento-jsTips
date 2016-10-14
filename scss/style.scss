@@ -1,0 +1,28 @@
+@import "_font";
+@import "_variables";
+@import "parts/_header";
+@import "parts/_featurePost";
+@import "parts/_posts-thumb";
+@import "parts/_footer";
+body{
+  overflow-x: hidden;
+*{
+  font-family: $fontPadrao;
+}
+small{
+  margin: 0;
+  padding: 0;
+  a{
+    color:#F3DA5C;
+    &:hover{
+      color:#000;
+    }
+  }
+  span{
+    font-weight: 700;
+  }
+}
+p{
+  font-size: 18px;
+}
+}

@@ -1,0 +1,38 @@
+.feature-post{
+  margin: 0;
+  padding: 0;
+  .feature-background{
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .feature-text{
+    background-color: rgba(255,255,255, 0.8);
+    position: absolute;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+  }
+  .btn-default{
+    background-color: #F3DA5C;
+    border: none;
+    color:#000;
+  }
+
+}
+.tag-post{
+  background-color: #f3f3f3;
+  height: 400px;
+  margin: 0 auto;
+  width: 100%;
+  .vertical{
+    h1{
+      margin: 15rem auto;
+      color: #666;
+    }
+  }
+}
