@@ -1,0 +1,34 @@
+{
+    "name": "JSTIPS",
+    "description": "thema do blog jstips",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "author": {
+        "name": "JST TIPS COMMUNITY",
+        "email": "jstips@jstips.com.br",
+        "url": "https://jstips.com.br"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Personal Blogs"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme"
+        "jstips"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jstipsBR/Desenvolvimento-jsTips.git"
+    },
+}

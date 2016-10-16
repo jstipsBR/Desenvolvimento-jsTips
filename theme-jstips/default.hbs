@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset "css/style.css"}}" media="screen" title="no title">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      {{ghost_head}}
+  </head>
+<body class="{{body_class}}">
+
+    {{!-- The blog navigation links --}}
+    {{navigation}}
+
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+        {{{body}}}
+
+        {{!-- The tiny footer at the very bottom --}}
+        <footer class="footer">
+          <div class="container">
+            <nav class="social col-md-6">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-github-square fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+              </li>
+              </ul>
+            </nav>
+            <div class="col-md-6">
+              <nav class="menu-footer">
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">videos</a></li>
+                  <li><a href="#">Artigos</a></li>
+                  <li><a href="#">Talks</a></li>
+                  <li><a href="#">Bibliotecas</a></li>
+                  <li><a href="#">Jobs</a></li>
+                </ul>
+              </nav>
+              <div class="rights">
+                &copy; 2016 <a href="#">jstips.com.br</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
+    {{!-- Fitvids makes video embeds responsive and awesome --}}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    {{!-- The main JavaScript file for Casper --}}
+    <script type="text/javascript" src="{{asset "js/scripts.js"}}"></script>
+    {{ghost_foot}}
+</body>
+</html>

@@ -5,9 +5,26 @@
   .logo{
     margin: 0;
     padding: 20px 0;
+    float: left;
+    display: inline-block;
       @media screen and(max-width: 767px){
           text-align: center;
       }
+  }
+  .social{
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 5rem 0 0 0 ;
+      li{
+        display: inline-block;
+        a{
+          .fa{
+             color:#F3DA5C;
+          }
+        }
+      }
+    }
   }
   .navbar{
     background-color: #F3DA5C;

@@ -1,0 +1,39 @@
+<header class="header">
+  <div class="container">
+    <h1 class="logo">
+      {{#if @blog.logo}}
+       <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+       {{/if}}
+    </h1>
+    <nav class="social col-md-3 pull-right">
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-github-square fa-3x"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+      </li>
+      </ul>
+    </nav>
+  </div>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#">
+      <i class="fa pull-left fa-bars fa-3x visible-xs drop" aria-hidden="true"></i>
+      </a>
+      <div class="input-group col-md-3 col-xs-10 pull-right form-search">
+      <input type="text" class="form-control" placeholder="ex: functions">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+      </span>
+    </div>
+      <ul class="col-md-9 menu-mobile">
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+      </ul>
+  </nav>
+</header>
