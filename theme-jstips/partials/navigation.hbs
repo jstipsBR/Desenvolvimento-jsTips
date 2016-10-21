@@ -1,9 +1,9 @@
-<header class="header">
+<header class="header" style="background:url('{{@blog.cover}}')">
   <div class="container">
     <h1 class="logo">
-      {{#if @blog.logo}}
-       <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
-       {{/if}}
+      <a href="/">
+        <img src="{{@blog.logo}}" alt="Jstips" />
+      </a>
     </h1>
     <nav class="social col-md-3 pull-right">
       <ul>
